@@ -30,12 +30,12 @@
     EXPOSE 8000
     
     # Set environment variables
-    ENV DOMAIN=localhost
+    ENV DOMAIN=13.49.177.138
     ENV ENVIRONMENT=local
     ENV PROJECT_NAME="Full Stack FastAPI Project"
     ENV STACK_NAME=full-stack-fastapi-project
-    ENV BACKEND_CORS_ORIGINS="http://localhost,http://localhost:5173,https://localhost,https://localhost:5173"
-    ENV SECRET_KEY=no
+    ENV BACKEND_CORS_ORIGINS="http://localhost,http://localhost:5173,https://localhost,https://localhost:5173,http://13.49.177.138,http://alexin_hng.mooo.com,http://alexinhngdevops.mooo.com,https://alexin_hng.mooo.com,https://alexinhngdevops.mooo.com"
+    ENV SECRET_KEY=nowahala
     ENV FIRST_SUPERUSER=devops@hng.tech
     ENV FIRST_SUPERUSER_PASSWORD=devops#HNG11
     ENV USERS_OPEN_REGISTRATION=True

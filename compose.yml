@@ -13,7 +13,7 @@ services:
       - ENVIRONMENT=local
       - PROJECT_NAME=Full Stack FastAPI Project
       - STACK_NAME=full-stack-fastapi-project
-      - BACKEND_CORS_ORIGINS=http://localhost,http://localhost:5173,https://localhost,https://localhost:5173
+      - BACKEND_CORS_ORIGINS=http://localhost,http://localhost:5173,https://localhost,https://localhost:5173,http://13.49.177.138,http://alexinhngdevops.mooo.com,https://alexinhngdevops.mooo.com,http://alexin_hng.mooo.com,https://13.49.177.138,https://alexin_hng.mooo.com
       - SECRET_KEY=changethis123
       - FIRST_SUPERUSER=devops@hng.tech
       - FIRST_SUPERUSER_PASSWORD=devops#HNG11
