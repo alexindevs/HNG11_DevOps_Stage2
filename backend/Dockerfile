@@ -47,10 +47,10 @@
     ENV SMTP_TLS=True
     ENV SMTP_SSL=False
     ENV SMTP_PORT=587
-    ENV POSTGRES_SERVER=dpg-cq45nto8fa8c73fl4cj0-a.oregon-postgres.render.com
-    ENV POSTGRES_DB=hng_devops_2
+    ENV POSTGRES_SERVER=db
+    ENV POSTGRES_DB=hng11devops2
     ENV POSTGRES_USER=alexin
-    ENV POSTGRES_PASSWORD=6UGnRF3MqLZ9P9fP1NqydV33VczsYKLG
+    ENV POSTGRES_PASSWORD=freakingtired
 
     # Run the application
     RUN bash ./prestart.sh
