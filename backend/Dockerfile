@@ -28,7 +28,7 @@
     ENV ENVIRONMENT=local
     ENV PROJECT_NAME="Full Stack FastAPI Project"
     ENV STACK_NAME=full-stack-fastapi-project
-    ENV BACKEND_CORS_ORIGINS="http://localhost,http://localhost:5173,https://localhost,https://localhost:5173,http://13.60.64.4,http://alexinhngdevops.mooo.com,https://alexinhngdevops.mooo.com,http://alexin_hng.mooo.com,https://13.60.64.4,https://alexin_hng.mooo.com"
+    ENV BACKEND_CORS_ORIGINS="http://localhost,http://frontend,https://frontend,http://localhost:5173,https://localhost,https://localhost:5173,http://13.60.64.4,http://alexinhngdevops.mooo.com,https://alexinhngdevops.mooo.com,http://alexin_hng.mooo.com,https://13.60.64.4,https://alexin_hng.mooo.com"
     ENV SECRET_KEY=nowahala
     ENV FIRST_SUPERUSER=devops@hng.tech
     ENV FIRST_SUPERUSER_PASSWORD=devops#HNG11
