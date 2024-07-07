@@ -7,12 +7,6 @@
     # Set the working directory in the container
     WORKDIR /app
     
-    # Install system dependencies (if needed)
-    RUN apt-get update && apt-get install -y \
-        curl \
-        build-essential \
-        && apt-get clean
-    
     # Install Poetry
     RUN pip install poetry
     
@@ -52,8 +46,4 @@
     ENV POSTGRES_USER=alexin
     ENV POSTGRES_PASSWORD=freakingtired
 
-    # Run the application
-    RUN bash ./prestart.sh
-    
-    # Command to run the application
-    CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    CMD poetry run bash ./prestart.sh; poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000
