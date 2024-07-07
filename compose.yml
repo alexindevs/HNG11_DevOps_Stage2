@@ -40,21 +40,20 @@ services:
       - "5173:5173"
     env_file: './frontend/.env'
 
-  # nginx:
-  #   build:
-  #     context: ./nginx
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "80:80"
-  #   depends_on:
-  #     - backend
-  #     - frontend
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+      - frontend
 
   nginx-proxy-manager:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
     ports:
-      - '80:80' # Public HTTP Port
       - '443:443' # Public HTTPS Port
       - '8090:81' # Admin Web Port
 
