@@ -50,12 +50,12 @@ services:
       - backend
       - frontend
 
-  nginx-proxy-manager:
-    image: 'jc21/nginx-proxy-manager:latest'
-    restart: unless-stopped
-    ports:
-      - '443:443' # Public HTTPS Port
-      - '8090:81' # Admin Web Port
+  # nginx-proxy-manager:
+  #   image: 'jc21/nginx-proxy-manager:latest'
+  #   restart: unless-stopped
+  #   ports:
+  #     - '443:443' # Public HTTPS Port
+  #     - '8090:81' # Admin Web Port
 
     volumes:
       - ./data:/data
