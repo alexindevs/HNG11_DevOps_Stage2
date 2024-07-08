@@ -8,27 +8,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
-    environment:
-      - DOMAIN=localhost
-      - ENVIRONMENT=local
-      - PROJECT_NAME=Full Stack FastAPI Project
-      - STACK_NAME=full-stack-fastapi-project
-      - BACKEND_CORS_ORIGINS=http://localhost,http://frontend,https://frontend,http://localhost:5173,https://localhost,https://localhost:5173,http://13.60.64.4,http://alexinhngdevops.mooo.com,https://alexinhngdevops.mooo.com,http://alexin_hng.mooo.com,https://13.60.64.4,https://alexin_hng.mooo.com
-      - SECRET_KEY=changethis123
-      - FIRST_SUPERUSER=devops@hng.tech
-      - FIRST_SUPERUSER_PASSWORD=devops#HNG11
-      - USERS_OPEN_REGISTRATION=True
-      - SMTP_HOST=
-      - SMTP_USER=
-      - SMTP_PASSWORD=
-      - EMAILS_FROM_EMAIL=info@example.com
-      - SMTP_TLS=True
-      - SMTP_SSL=False
-      - SMTP_PORT=587
-      - POSTGRES_SERVER=db
-      - POSTGRES_DB=hng11devops2
-      - POSTGRES_USER=alexin
-      - POSTGRES_PASSWORD=freakingtired
     depends_on:
       - db
 
